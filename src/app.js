@@ -1,6 +1,9 @@
 const postcss = require('postcss');
 const parsers = require('./parsers');
 const stringify = require('./utils').stringify;
+
+// isSimple doesn't make much sense
+// needs to be simplified (yes the irony)
 const isSimple = require('./utils').isSimple;
 
 const cssrules = (css) => {
