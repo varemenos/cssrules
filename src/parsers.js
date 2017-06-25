@@ -45,7 +45,7 @@ parsers.rules = (rules, joinChar = ',') => {
             const props = parsers.declarations(rule.nodes);
             return `${selector}{${props}}`;
         })
-        .join(joinChar)
+        .join(joinChar);
 };
 
 parsers.declaration = declaration => {
