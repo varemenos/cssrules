@@ -10,10 +10,8 @@ const cssrules = (css) => {
     return postcss()
         .process(css)
         .then(result => {
-
             return parsers.root(result.root)
                 .map(data => {
-
                     if (isSimple(data)) {
                         return stringify.simple(
                             data.selector,
